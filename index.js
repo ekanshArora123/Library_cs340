@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Set a port in the range: 1024 < PORT < 65535
-const PORT = 3000;
+const PORT = 34598;
 
 // Serve static files from the current directory
 app.use(express.static(path.join(__dirname)));

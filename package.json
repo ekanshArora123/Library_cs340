@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "development": "npx nodemon index.js",
+      "production": "npx forever start index.js",
+      "stop_production": "npx forever stop index.js"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +13,10 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "forever": "^4.0.3",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
     "path": "^0.12.7"
   },
   "type": "commonjs"
